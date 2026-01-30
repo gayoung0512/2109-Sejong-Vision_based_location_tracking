@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/rock"
+            android:text="Where am I?"
+            android:textColor="#000000"
+            android:textSize="45dp" />
+
+
+        <TextView
+            android:id="@+id/lotte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/rock"
+            android:text="in Lotte Tower"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="432dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:insetTop="6dp"
+                android:text="Food"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/Fashion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft = "@+id/Food"
+                android:layout_below = "@+id/Food"
+                android:layout_marginTop="30dp"
+                android:text="Fashion"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/etc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft = "@+id/Fashion"
+                android:layout_below = "@+id/Fashion"
+                android:layout_marginTop="30dp"
+                android:text="ETC"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
